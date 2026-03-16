@@ -1,39 +1,57 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Styled Paragraphs with Internal & External CSS</title>
+<title>Home is the best</title>
 
-<!-- Simulated External CSS (placed in <style> for one file) -->
+<!-- External CSS simulated in same file -->
 <style>
-/* External CSS part - general page styling */
+/* External CSS: general page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f7;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    color: #333;
 }
 
 section {
-    max-width: 800px;
-    margin: auto;
+    max-width: 900px;
+    margin: 50px auto;
     background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+/* Paragraph styling */
 p {
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 20px;
     font-size: 1.1em;
+    transition: color 0.3s;
 }
-</style>
 
-<!-- Internal CSS for special paragraph styling -->
-<style>
+p:hover {
+    color: #2980b9; /* subtle hover color */
+}
+
+/* Internal CSS for special styling */
 .underline {
     text-decoration: underline;
     color: #2c3e50;
@@ -44,18 +62,18 @@ p {
     color: #e74c3c; /* red-ish for emphasis */
 }
 </style>
-
 </head>
+
 <body>
 
 <section>
-<h2>Example of Styled Paragraphs</h2>
+<h2>Professional Styled Paragraphs</h2>
 
-<p class="italic">This paragraph is slanted (italic) using internal CSS.</p>
-<p class="underline">This paragraph is underlined using internal CSS.</p>
-<p class="underline">This paragraph is also underlined for emphasis.</p>
-<p>This paragraph is normal, styled by the simulated external CSS.</p>
-<p>This paragraph is also normal, just standard styling.</p>
+<p class="italic">I like chapati with Meat.</p>
+<p class="underline">I like chapati with Meat..</p>
+<p class="underline">I like chapati with Meat..</p>
+<p>I like chapati with Meat..</p>
+<p>I like chapati with Meat..</p>
 
 </section>
 
